@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.prototype.MainActivity">
+    <com.wonderkiln.camerakit.CameraView
+        app:ckFacing="back"
+        app:ckFocus="tapWithMarker"
+        app:ckJpegQuality="100"
+        app:ckVideoQuality="highest"
+        app:ckDoubleTapToToggleFacing="true"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraview">
+    </com.wonderkiln.camerakit.CameraView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/location_gps"
+        android:shadowColor="@color/black_overlay"
+        android:src="@drawable/ic_location_on_white_36dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:layout_marginStart="25dp"
+        android:id="@+id/text_location"
+        android:layout_below="@id/location_gps"
+        android:textAlignment="gravity"
+        android:textStyle="bold"
+        android:textColor="#F5F5F5" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/CameraButton"
+        android:shadowColor="@color/black_overlay"
+        android:src="@drawable/ic_donut_large_white_36dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CameraFlip"
+        android:src="@drawable/ic_redo_white_36dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:shadowColor="@color/black_overlay"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flip  "
+        android:id="@+id/text_flip"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/CameraFlip"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#F5F5F5" />
+</RelativeLayout>

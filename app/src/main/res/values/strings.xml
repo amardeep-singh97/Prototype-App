@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Prototype</string>
+    <string name="location">Tracking</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="open_setting">Open location setting</string>
+    <string name="msg">Location is Not Enabled</string>
+    <string name="cancel">Cancel</string>
+</resources>
